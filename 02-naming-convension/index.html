@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ext JS Naming Convection</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"
+    ></script>
+    <script>
+      Ext.onReady(function () {
+        Ext.create("Ext.Panel", {
+          renderTo: "helloWorldPanel",
+          height: 100,
+          width: 200,
+          title: "Hello World",
+          html: "Ext JS Hello World Program1",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="helloWorldPanel"></div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Convection For</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Class</td>
+          <td>
+            Class name should be in CamelCase, <br />
+            Don't use hyphen or underscores. <br />
+            Class name should be with at least one unique <br />
+            namespace separeated by dot(.). <br />
+            Never use Ext as top level namespace.
+          </td>
+          <td>
+            MyCustomClass, <br />
+            TopLevelNamespace, <br />
+            myClassName
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
